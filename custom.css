@@ -1,0 +1,82 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(220, 53, 69, 0.7), rgba(220, 53, 69, 0.7)), 
+                 url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Animasi Teks */
+.animated-text {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Efek Highlight */
+.highlight {
+    color: #ffc107; /* Warna kuning */
+    text-decoration: underline;
+}
+
+/* Animasi Subtext */
+.animated-subtext {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out 0.5s; /* Animasi muncul secara perlahan */
+}
+
+/* Tombol Animasi */
+.animated-button {
+    animation: fadeInUp 1s ease-out 0.8s;
+}
+
+/* Button */
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffc107;
+    border: none;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.6);
+}
+
+/* Keyframes untuk Animasi */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

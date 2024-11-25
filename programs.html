@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sekolah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.smkn1.jpeg" alt="Logo" width="40" class="me-2"> SMKN 1 SELAYAR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="programs.html">Program</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="alumni.html">Data Alumni</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <section id="programs" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Program Unggulan</h2>
+            <div class="row text-center">
+                <!-- TKJ -->
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" onclick="showProgramDetails('Teknik Komputer dan Jaringan (TKJ)')">
+                        <i class="fas fa-server program-icon"></i>
+                        <h5>Teknik Komputer dan Jaringan (TKJ)</h5>
+                        <p>Mempelajari jaringan komputer, server, dan infrastruktur IT.</p>
+                    </div>
+                </div>
+                <!-- MM -->
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" onclick="showProgramDetails('Multimedia (MM)')">
+                        <i class="fas fa-camera program-icon"></i>
+                        <h5>Multimedia (MM)</h5>
+                        <p>Kreativitas dalam desain grafis, animasi, dan produksi multimedia.</p>
+                    </div>
+                </div>
+                <!-- OTKP -->
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" onclick="showProgramDetails('Otomatisasi dan Tata Kelola Perkantoran (OTKP)')">
+                        <i class="fas fa-users-cog program-icon"></i>
+                        <h5>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</h5>
+                        <p>Mengelola dokumen dan administrasi perkantoran secara modern.</p>
+                    </div>
+                </div>
+                <!-- UPW -->
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" onclick="showProgramDetails('Usaha Perjalanan Wisata (UPW)')">
+                        <i class="fas fa-plane-departure program-icon"></i>
+                        <h5>Usaha Perjalanan Wisata (UPW)</h5>
+                        <p>Belajar mengelola usaha wisata dan pelayanan perjalanan profesional.</p>
+                    </div>
+                </div>
+                <!-- AKL -->
+                <div class="col-md-4 mb-4">
+                    <div class="program-card" onclick="showProgramDetails('Akuntansi dan Keuangan Lembaga (AKL)')">
+                        <i class="fas fa-money-check-alt program-icon"></i>
+                        <h5>Akuntansi dan Keuangan Lembaga (AKL)</h5>
+                        <p>Menguasai pencatatan keuangan perusahaan secara profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Informasi Kontak -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Kontak Kami</h3>
+                    <p>Alamat: Jalan Pahlawan, No.31 Benteng</p>
+                    <p>Telepon: 123-456-7890</p>
+                    <p>Email: kontak@website.com</p>
+                </div>
+                <section id="lokasi" class="py-5 bg-light">
+                    <div class="container">
+                        <h2 class="text-center mb-4">Lokasi Kami</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Alamat</h4>
+                                <p>
+                                    SMKN 1 Selayar<br>
+                                    Jalan Pahlawan No. 31, Benteng Utara, <br>
+                                    Kab. Kepulauan Selayar, Sulawesi Selatan, Indonesia.
+                                </p>
+                                <h4>Kontak</h4>
+                                <p>Telepon: 0852-9035-7350</p>
+                                <p>Email: <a href="mailto:smkn1-slyr.sch.id">smkn1-slyr.sch.id</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Peta Lokasi</h4>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1831659272734!2d120.4639489741468!3d-6.106021593880443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbbcb3c47125bff%3A0x67f0af915ead3109!2sSMK%20Negeri%201%20Selayar!5e0!3m2!1sen!2sid!4v1732534325187!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="social-links text-center mt-4">
+                    <a href="https://www.facebook.com/share/1AgviwJmiV/" target="_blank" class="me-3">
+                        <i class="fab fa-facebook fa-2x"></i> <!-- Ikon Facebook -->
+                    </a>
+                    <a href="https://www.instagram.com/smksatuselayar?igsh=NGl4YTBocDk1ZXhr" target="_blank" class="me-3">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- Ikon Instagram -->
+                    </a>
+                    <a href="https://youtube.com/@smknegeri1selayar?si=vBq0dstCiThIT4Hi" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i> <!-- Ikon YouTube -->
+                    </a>
+                </div>
+                
+                    <div class="copyright"><p>&copy; 2024 SMKN 1 SELAYAR. All rights reserved.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

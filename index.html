@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK NEGERI 1 SELAYAR</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Hero Section */
+        .hero-section {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Animasi Teks */
+        .animated-text {
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        .highlight {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+
+        /* Animasi Subtext */
+        .animated-subtext {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1.5s ease-out 0.5s;
+        }
+
+        .animated-button {
+            animation: fadeInUp 1.5s ease-out 1s;
+        }
+
+        /* Button */
+        .hero-section .btn {
+            font-size: 1.2rem;
+            padding: 10px 30px;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #ffc107;
+            border: none;
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .hero-section .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(255, 193, 7, 0.6);
+        }
+
+        /* Keyframes untuk Animasi */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.smkn1.jpeg" alt="Logo" width="40" class="me-2"> SMKN 1 SELAYAR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="programs.html">Program</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="pendaftaran.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container text-center text-white">
+            <h1 class="animated-text">Selamat Datang di <span class="highlight">SMKN 1 SELAYAR</span></h1>
+            <p class="lead animated-subtext">Menyongsong Masa Depan dengan Pendidikan Berkualitas</p>
+            <a href="programs.html" class="btn btn-light btn-lg animated-button">Lihat Program</a>
+        </div>
+    </header>
+
+    <!-- Visi dan Misi Section -->
+    <section id="visi-misi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Visi dan Misi</h2>
+            <div class="row text-center">
+                <!-- Visi -->
+                <div class="col-md-6 mb-4">
+                    <div class="vision-card">
+                        <i class="fas fa-eye vision-icon"></i>
+                        <h5>Visi</h5>
+                        <p>Menjadi sekolah menengah kejuruan terpadu untuk menghasilkan tamatan yang memiliki ilmu pengetahuan dan keterampilan yang berlandaskan iman dan taqwa, berwawasan lingkungan dalam upaya memenuhi kebutuhan dunia kerja sekarang maupun yang akan datang.</p>
+                    </div>
+                </div>
+                <!-- Misi -->
+                <div class="col-md-6 mb-4">
+                    <div class="mission-card">
+                        <i class="fas fa-bullseye mission-icon"></i>
+                        <h5>Misi</h5>
+                        <ul class="mission-list">
+                            <li>Menerapkan pembinaan ilmu yang amaliah, amal yang amaliah dan akhlakulkarimah.</li>
+                            <li>Mengembangkan iklim belajar berwawasan global yang berakar pada sistem nilai, adat, istiadat, agama dan budaya masyarakat.</li>
+                            <li>Mengembangkan sistem pendidikan yang fleksibel dan permiabel.</li>
+                            <li>Mengembangkan sistem pendidikan yang terintegrasi antara jalur pendidikan sekolah dan luar sekolah, berwawasan mutu dan keunggulan sesuai kebutuhan pasar.</li>
+                            <li>Mengembangkan bidang keahlian yang mendukung Selayar sebagai daerah wisata dan maritim.</li>
+                            <li>Mengembangkan kualitas SDM yang siap bekerja dan berdaya saing, serta menumbuhkan jiwa wirausaha pada setiap program keahlian.</li>
+                            <li>Mengembangkan dan menyelaraskan kurikulum yang berbasis dunia kerja, TIK muatan lokal untuk mendorong keterampilan abad 21 serta meningkatkan kerja sama sekolah dengan dunia kerja, perguruan tinggi dan stakeholder terkait.</li>
+                            <li>Meningkatkan profesionalitas Tenaga Pendidik dan Tenaga Pendidikan.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="jurusan" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Jurusan Kami</h2>
+            <div class="row">
+                <!-- Jurusan TKJ -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center p-4">
+                        <i class="fas fa-laptop-code fa-3x mb-3"></i> <!-- Ikon untuk TKJ -->
+                        <h4 class="card-title">Teknik Komputer dan Jaringan (TKJ)</h4>
+                        <p class="card-text">Jurusan ini mempersiapkan siswa untuk memahami dan menguasai teknologi informasi serta jaringan komputer yang berkembang pesat.</p>
+                    </div>
+                </div>
+                <!-- Jurusan MM -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center p-4">
+                        <i class="fas fa-cogs fa-3x mb-3"></i> <!-- Ikon untuk MM -->
+                        <h4 class="card-title">Multimedia (MM)</h4>
+                        <p class="card-text">Mempelajari berbagai aspek multimedia seperti desain grafis, animasi, video editing, serta pengembangan konten digital lainnya.</p>
+                    </div>
+                </div>
+                <!-- Jurusan OTKP -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center p-4">
+                        <i class="fas fa-users fa-3x mb-3"></i> <!-- Ikon untuk OTKP -->
+                        <h4 class="card-title">Otomatisasi Tata Kelola Perkantoran (OTKP)</h4>
+                        <p class="card-text">Fokus pada keterampilan administrasi, pengelolaan kantor, dan penggunaan teknologi dalam kegiatan perkantoran.</p>
+                    </div>
+                </div>
+                <!-- Jurusan AKL -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center p-4">
+                        <i class="fas fa-calculator fa-3x mb-3"></i> <!-- Ikon untuk AKL -->
+                        <h4 class="card-title">Akuntansi dan Keuangan Lembaga (AKL)</h4>
+                        <p class="card-text">Mempelajari sistem akuntansi, manajemen keuangan, dan analisis laporan keuangan yang diperlukan di dunia usaha.</p>
+                    </div>
+                </div>
+                <!-- Jurusan UPW -->
+                <div class="col-md-4 mb-4">
+                    <div class="card text-center p-4">
+                        <i class="fas fa-building fa-3x mb-3"></i> <!-- Ikon untuk UPW -->
+                        <h4 class="card-title">Usaha Perjalanan Wisata (UPW)</h4>
+                        <p class="card-text">Mempersiapkan siswa untuk mengelola industri pariwisata, termasuk perencanaan perjalanan, tiket, dan manajemen layanan wisata.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why-choose-smk" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Kenapa Harus Memilih SMK?</h2>
+            <div class="row">
+                <!-- Alasan 1 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                    </div>
+                    <h5>Praktik Kerja Nyata</h5>
+                    <p>Mendapatkan pengalaman langsung di dunia kerja melalui program praktik industri.</p>
+                </div>
+                <!-- Alasan 2 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                    </div>
+                    <h5>Peluang Karir</h5>
+                    <p>SMK menciptakan lulusan yang siap kerja dengan keahlian yang relevan dengan kebutuhan industri.</p>
+                </div>
+                <!-- Alasan 3 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-graduation-cap fa-3x text-warning mb-3"></i>
+                    </div>
+                    <h5>Persiapan Melanjutkan Studi</h5>
+                    <p>SMK juga mempersiapkan siswa untuk melanjutkan pendidikan ke perguruan tinggi.</p>
+                </div>
+                <!-- Alasan 4 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-lightbulb fa-3x text-info mb-3"></i>
+                    </div>
+                    <h5>Inovasi dan Kreativitas</h5>
+                    <p>Mengembangkan kreativitas melalui pembelajaran berbasis proyek dan teknologi.</p>
+                </div>
+                <!-- Alasan 5 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-industry fa-3x text-danger mb-3"></i>
+                    </div>
+                    <h5>Kemitraan dengan Industri</h5>
+                    <p>Memiliki hubungan erat dengan dunia industri untuk mendukung pembelajaran siswa.</p>
+                </div>
+                <!-- Alasan 6 -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="icon-container">
+                        <i class="fas fa-user-shield fa-3x text-secondary mb-3"></i>
+                    </div>
+                    <h5>Keamanan Karir</h5>
+                    <p>Lulusan SMK memiliki keunggulan dalam pasar kerja karena kompetensi yang spesifik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="feedback-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Umpan Balik Anda</h2>
+            <p class="text-center mb-4">Kami menghargai setiap masukan untuk membuat layanan kami lebih baik.</p>
+            <form class="feedback-form">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Masukkan email Anda" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea id="message" rows="5" class="form-control" placeholder="Tulis pesan Anda" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary feedback-btn">Kirim Umpan Balik</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="join-us" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Bergabung Dengan Kami</h2>
+            <p class="text-center mb-5">Kami membuka kesempatan bagi Anda yang ingin berkarir atau berkontribusi di SMKN 1 SELAYAR. Silakan isi formulir di bawah untuk bergabung dengan kami.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="join-us-form">
+                        <form id="join-us-form" action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger">Kirim</button>
+                            </div>
+                        </form>
+                        <!-- Pesan Sukses -->
+                        <div id="success-message" class="alert alert-success mt-4" style="display: none;">
+                            Pendaftaran berhasil! Terima kasih telah bergabung, kami akan menghubungi Anda segera.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Informasi Kontak -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Bagian Kontak Kami dan Lokasi Kami -->
+<div id="contact">
+    <div class="col-md-6">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jalan Pahlawan, No.31 Benteng Utara. Kab. Kepulauan Sealayar</p>
+        <p>Telepon: 0852-9035-7350 </p>
+        <P>Email:smkn1-slyr.sch.id </P>
+    </div>
+
+    <div class="col-md-6">
+        <!-- Kontainer Map -->
+    <div class="map-container">
+        <!-- Bagian Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1831659272734!2d120.4639489741468!3d-6.106021593880443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbbcb3c47125bff%3A0x67f0af915ead3109!2sSMK%20Negeri%201%20Selayar!5e0!3m2!1sen!2sid!4v1732512383227!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Bagian Deskripsi atau Kontak (Opsional) -->
+        <div class="map-description">
+    </div>
+</div>
+<div class="social-links text-center mt-4">
+    <a href="https://www.facebook.com/share/1AgviwJmiV/" target="_blank" class="me-3">
+        <i class="fab fa-facebook fa-2x"></i> <!-- Ikon Facebook -->
+    </a>
+    <a href="https://www.instagram.com/smksatuselayar?igsh=NGl4YTBocDk1ZXhr" target="_blank" class="me-3">
+        <i class="fab fa-instagram fa-2x"></i> <!-- Ikon Instagram -->
+    </a>
+    <a href="https://youtube.com/@smknegeri1selayar?si=vBq0dstCiThIT4Hi" target="_blank">
+        <i class="fab fa-youtube fa-2x"></i> <!-- Ikon YouTube -->
+    </a>
+</div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        © 2024 SMKN 1 SELAYAR. All rights reserved.
+    </div>
+</div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

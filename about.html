@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi - Flowchart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Styling untuk flowchart */
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .flowchart .level {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .flowchart .level .box {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 30px;
+            margin: 0 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .flowchart .level .box:hover {
+            transform: scale(1.05);
+        }
+
+        .flowchart .level .box i {
+            font-size: 30px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Garis penghubung berbentuk panah */
+        .flowchart .line {
+            width: 2px;
+            height: 40px;
+            background-color: #2575fc;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .flowchart .line::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #2575fc;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .flowchart .level {
+                flex-direction: column;
+            }
+            .flowchart .level .box {
+                margin: 15px 0;
+            }
+        }
+    </style>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo.smkn1.jpeg" alt="Logo" width="40" class="me-2"> SMKN 1 SELAYAR
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="programs.html">Program</a></li>
+                <li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="alumni.html">Data Alumni</a></li>
+                <li class="nav-item active"><a class="nav-link" href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Struktur Organisasi</h2>
+        <div class="flowchart">
+            <!-- Kepala Sekolah -->
+            <div class="level">
+                <div class="box">
+                    <i class="fas fa-user-tie"></i>
+                   A. Ahmad S.pd
+                </div>
+            </div>
+            <div class="line"></div>
+            
+            <!-- Wakil Kepala Sekolah -->
+            <div class="level">
+                <div class="box">
+                    <i class="fas fa-book"></i>
+                    Wakil Kepala Kurikulum
+                </div>
+                <div class="box">
+                    <i class="fas fa-users"></i>
+                    Wakil Kepala Kesiswaan
+                </div>
+                <div class="box">
+                    <i class="fas fa-tools"></i>
+                    Wakil Kepala Sarana
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <!-- Kepala Program Studi -->
+            <div class="level">
+                <div class="box">
+                    <i class="fas fa-laptop-code"></i>
+                    Teknik Komputer
+                </div>
+                <div class="box">
+                    <i class="fas fa-car"></i>
+                    Teknik Otomotif
+                </div>
+                <div class="box">
+                    <i class="fas fa-network-wired"></i>
+                    Teknik Jaringan
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <!-- Guru dan Staf -->
+            <div class="level">
+                <div class="box">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Guru
+                </div>
+                <div class="box">
+                    <i class="fas fa-user-cog"></i>
+                    Staf Administrasi
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="core-values" class="section">
+    <div class="container">
+        <h2 class="section-title">Nilai Inti</h2>
+        <div class="values">
+            <!-- Kartu 1 -->
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Inovasi</h3>
+                <p>Mengembangkan pemikiran kreatif dan solusi baru dalam pendidikan.</p>
+            </div>
+
+            <!-- Kartu 2 -->
+            <div class="value-card">
+                <i class="fas fa-users"></i>
+                <h3>Kolaborasi</h3>
+                <p>Bekerja sama dengan dunia usaha dan industri untuk hasil terbaik.</p>
+            </div>
+
+            <!-- Kartu 3 -->
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Integritas</h3>
+                <p>Menanamkan nilai kejujuran dan tanggung jawab pada siswa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Testimoni</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Testimoni 1 -->
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"SMKN 1 Selayar memberikan pengalaman pendidikan yang luar biasa. Kurikulum yang diterapkan sangat relevan dengan kebutuhan industri!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="profil1.jpeg" alt="Testimoni 1" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h5 class="author-name">Stefani Aurelia</h5>
+                                <span class="author-position">Alumni Teknik Komputer</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="testimonial-contact">
+                            <i class="fab fa-whatsapp"></i> Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Sebagai mahasiswa magang, saya mendapat banyak ilmu dan pengalaman berharga yang membentuk karir saya di dunia kerja."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="profil4.jpeg" alt="Testimoni 2" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h5 class="author-name">Steven Abraham</h5>
+                                <span class="author-position">Mahasiswa Magang</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="testimonial-contact">
+                            <i class="fab fa-whatsapp"></i> Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Fasilitas yang ada sangat mendukung pembelajaran praktis. Saya merasa siap terjun ke dunia kerja setelah lulus."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="profil5.jpeg" alt="Testimoni 3" class="testimonial-avatar">
+                            <div class="author-info">
+                                <h5 class="author-name">Budi Santoso</h5>
+                                <span class="author-position">Siswa Teknik Jaringan</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/yourwhatsappnumber" target="_blank" class="testimonial-contact">
+                            <i class="fab fa-whatsapp"></i> Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Bagian Kontak Kami dan Lokasi Kami -->
+<div id="contact">
+    <div class="col-md-6">
+        <h3>Kontak Kami</h3>
+        <p>Alamat: Jalan Pahlawan, No.31 Benteng Utara. Kab. Kepulauan Sealayar</p>
+        <p>Telepon: 0852-9035-7350 </p>
+        <P>Email:smkn1-slyr.sch.id </P>
+    </div>
+
+    <div class="col-md-6">
+        <!-- Kontainer Map -->
+    <div class="map-container">
+        <!-- Bagian Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.1831659272734!2d120.4639489741468!3d-6.106021593880443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbbcb3c47125bff%3A0x67f0af915ead3109!2sSMK%20Negeri%201%20Selayar!5e0!3m2!1sen!2sid!4v1732512383227!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Bagian Deskripsi atau Kontak (Opsional) -->
+        <div class="map-description">
+    </div>
+</div>
+<div class="social-links text-center mt-4">
+    <a href="https://www.facebook.com/share/1AgviwJmiV/" target="_blank" class="me-3">
+        <i class="fab fa-facebook fa-2x"></i> <!-- Ikon Facebook -->
+    </a>
+    <a href="https://www.instagram.com/smksatuselayar?igsh=NGl4YTBocDk1ZXhr" target="_blank" class="me-3">
+        <i class="fab fa-instagram fa-2x"></i> <!-- Ikon Instagram -->
+    </a>
+    <a href="https://youtube.com/@smknegeri1selayar?si=vBq0dstCiThIT4Hi" target="_blank">
+        <i class="fab fa-youtube fa-2x"></i> <!-- Ikon YouTube -->
+    </a>
+</div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white py-3">
+    <div class="container text-center">
+        <p>&copy; 2024 SMKN 1 Selayar | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
